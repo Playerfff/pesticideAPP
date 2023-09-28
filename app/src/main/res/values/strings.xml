@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">pesticideAPP</string>
+    <string name="textViewPrompt">Please choose one sample picture from your file system,\nthe app will analyze the sample slice automatically.</string>
+</resources>

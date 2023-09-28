@@ -1,0 +1,78 @@
+<!-- activity_main.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha="@dimen/material_emphasis_medium"
+    android:background="@color/gray"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="195dp"
+        android:layout_height="221dp"
+        android:layout_alignParentLeft="true"
+        android:src="@mipmap/jlu_icon" />
+
+    <ImageView
+        android:id="@+id/imageViewLogo2"
+        android:layout_width="141dp"
+        android:layout_height="145dp"
+        android:layout_alignParentRight="true"
+        app:srcCompat="@mipmap/moppl_logo" />
+
+    <TextView
+        android:id="@+id/textViewBanner1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageViewLogo2"
+        android:layout_alignParentRight="true"
+        android:text="Hello, Moppl!   "
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewBanner2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewBanner1"
+        android:layout_alignParentRight="true"
+        android:text="Monitoring of pesticide poisoning levels"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/buttonTakePhoto"
+        android:layout_width="200sp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/imageViewLogo"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:text="Capture Image"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/buttonFile"
+        android:layout_width="200sp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/buttonTakePhoto"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:text="File"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/buttonScanQRCode"
+        android:layout_width="200sp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/buttonFile"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:text="Scan QR Code"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>
